@@ -1,4 +1,4 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta property="og:type" content="website"><meta property="og:title" content="Borimas &amp; Songpon Wedding"><meta property="og:description" content="ขอเรียนเชิญร่วมงานมงคลสมรส บริมาส & ทรงพล วันอาทิตย์ที่ 17 มกราคม 2570 ณ โรงแรมน้ำทองน่าน"><meta name="description" content="ขอเรียนเชิญร่วมงานมงคลสมรส บริมาส & ทรงพล วันอาทิตย์ที่ 17 มกราคม 2570 ณ โรงแรมน้ำทองน่าน"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body><!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta property="og:type" content="website"><meta property="og:title" content="Borimas &amp; Songpon Wedding"><meta property="og:description" content="ขอเรียนเชิญร่วมงานมงคลสมรส บริมาส & ทรงพล วันอาทิตย์ที่ 17 มกราคม 2570 ณ โรงแรมน้ำทองน่าน"><meta name="description" content="ขอเรียนเชิญร่วมงานมงคลสมรส บริมาส & ทรงพล วันอาทิตย์ที่ 17 มกราคม 2570 ณ โรงแรมน้ำทองน่าน"><meta property="og:url" content="https://warinatj.github.io/SoftNuengTogether/"><meta property="og:image" content="https://warinatj.github.io/SoftNuengTogether/pics/hero.jpg"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body><!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Borimas & Songpon Wedding</title>
 <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Thai:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -10,7 +10,7 @@
   color-scheme:light; /* the invitation keeps one light look in every theme */
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font-family:'Noto Serif Thai',Georgia,serif;font-weight:300;line-height:1.8;overflow-x:hidden}
 .wrap{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 40px rgba(142,111,118,.08);padding-bottom:72px;overflow:hidden}
 .en{font-family:'Italiana','Didot',serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mauve);font-weight:400}
@@ -71,9 +71,10 @@ svg.posy,.cmeadow,#emeadow,.blooms,.lineflora{overflow:visible}
 .env .back{position:absolute;inset:0;background:var(--env-dk);border-radius:4px;box-shadow:0 18px 30px rgba(178,106,147,.28)}
 .letter{position:absolute;left:5%;right:5%;top:6%;bottom:4%;background:var(--paper);border-radius:2px;z-index:1;display:flex;flex-direction:column;
   align-items:center;padding-top:7%;gap:0;transition:transform 1.8s cubic-bezier(.3,.7,.3,1);box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.letter .en{font-size:12px;color:#8a3d66;-webkit-text-stroke:.45px currentColor}
-.letter b{font-family:'Italiana',serif;font-weight:400;color:#9c4877;font-size:23px;letter-spacing:.04em;line-height:1.2;-webkit-text-stroke:.6px currentColor}
-.letter .cg{color:#5b3f48!important;font-weight:600;font-size:15px!important}
+/* the letter is sized with the envelope (78vw up to 300px), so its text scales with it and never wraps */
+.letter .en{font-size:clamp(10px,3.2vw,12px);color:#8a3d66;-webkit-text-stroke:.45px currentColor;white-space:nowrap}
+.letter b{font-family:'Italiana',serif;font-weight:400;color:#9c4877;font-size:clamp(14px,5.8vw,23px);letter-spacing:.03em;line-height:1.2;-webkit-text-stroke:.6px currentColor;white-space:nowrap}
+.letter .cg{color:#5b3f48!important;font-weight:600;font-size:clamp(12px,4vw,15px)!important;white-space:nowrap}
 .letter .ering{display:inline-block;width:.95em;height:1.03em;vertical-align:-.12em;margin:0 .08em}
 .pocket,.flap,.sprig{position:absolute;left:0;width:100%;display:block}
 .pocket{top:0;height:100%;z-index:2}
@@ -188,7 +189,11 @@ h2{font-size:26px;margin-bottom:26px}
 .tl .ic svg{width:36px;height:36px;stroke:var(--mauve);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .tl .time{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--mauve);font-weight:500;line-height:1.2}
 .tl .time .unit{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:500}
-.tl .what{font-size:13px;line-height:1.5}
+.tl .what{font-size:clamp(11px,3.5vw,13px);line-height:1.5}
+/* keep short labels on one line when the screen is narrow or the phone's text size is enlarged */
+.tl .time{white-space:nowrap;font-size:clamp(18px,6vw,22px)}
+.tap span{white-space:nowrap}
+.rsvp .btn{white-space:nowrap}
 
 /* dress code */
 .sw{display:flex;justify-content:center;gap:14px;margin-top:6px}
@@ -257,7 +262,7 @@ h2{font-size:26px;margin-bottom:26px}
 .rsvp .btn{align-self:center;font-family:'Noto Serif Thai',serif;letter-spacing:.04em;font-weight:500;border:0}
 .rsvp .btn:disabled{opacity:.6;cursor:wait}
 .rsvp.done{text-align:center;align-items:center}
-.rsvp.done .thx{font-size:18px;font-weight:500;color:#a5537c}
+.rsvp.done .thx{font-size:clamp(15px,5vw,18px);white-space:nowrap;font-weight:500;color:#a5537c}
 .rsvp.done .btn{border:1px solid var(--mauve)}
 nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:grid;grid-template-columns:repeat(4,1fr);
   background:rgba(255,253,251,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);z-index:40;padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -550,8 +555,8 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
 
   <!-- rsvp: shown only in the GitHub build (RSVP_ENABLED), answers go to Google Sheets -->
   <section id="rsvp" hidden>
-    <h2 class="en" style="margin-bottom:6px" data-anim="up">RSVP</h2>
-    <p class="sub" data-anim="up" style="--d:.1s">ตอบรับการเข้าร่วมงานและส่งคำอวยพร<br><span style="font-size:13px">รบกวนตอบกลับภายในวันที่ 31 ธันวาคม 2569</span></p>
+    <h2 data-anim="up" style="margin-bottom:6px;font-family:'Noto Serif Thai',serif;font-weight:500;font-size:clamp(18px,6.4vw,24px);color:#8e6f76;white-space:nowrap">ตอบรับการเข้าร่วมงาน</h2>
+    <p class="sub" data-anim="up" style="--d:.1s">และส่งคำอวยพรถึงบ่าวสาว</p>
     <form class="rsvp" id="rsvpForm" novalidate data-anim="up" style="--d:.2s">
       <label class="rf" for="rsvpName">ชื่อ-นามสกุล (หรือชื่อเล่น)</label>
       <input id="rsvpName" name="name" type="text" autocomplete="name" maxlength="100" placeholder="เช่น สมใจ ใจดี" required>
