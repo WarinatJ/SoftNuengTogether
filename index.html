@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Borimas & Songpon Wedding</title>
 <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Thai:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -27,7 +28,7 @@ button{font:inherit;cursor:pointer}
 @keyframes drift{0%,100%{transform:translate(0,0) rotate(-8deg)}50%{transform:translate(14px,-18px) rotate(8deg)}}
 
 /* ---------- cover ---------- */
-#cover{position:fixed;inset:0;z-index:50;background:var(--white);overflow:hidden;transition:opacity .9s ease,visibility .9s ease}
+#cover{position:fixed;inset:0;z-index:50;background:var(--white);overflow:hidden;transition:opacity 1.6s ease,visibility 1.6s ease}
 #cover.open{opacity:0;visibility:hidden}
 .cv{position:relative;z-index:2;height:100%;max-width:480px;margin:0 auto;display:flex;flex-direction:column;align-items:center;padding:7vh 20px 0}
 .std{font-family:'Italiana',serif;color:#a24f7d;text-align:center;letter-spacing:.32em;font-size:17px;line-height:1.4;-webkit-text-stroke:.7px currentColor}
@@ -64,21 +65,22 @@ svg.posy,.cmeadow,#emeadow,.blooms,.lineflora{overflow:visible}
 @keyframes wind{from{transform:translateX(0) rotate(0)}to{transform:translateX(580px) rotate(320deg)}}
 @keyframes bob{from{transform:translateY(-16px)}to{transform:translateY(16px)}}
 
-.env{position:relative;margin-top:2.5vh;width:min(300px,78vw);aspect-ratio:300/200;cursor:pointer;perspective:800px;transition:transform .5s ease;-webkit-tap-highlight-color:transparent;outline:none;z-index:3}
+.env{position:relative;margin-top:2.5vh;width:min(300px,78vw);aspect-ratio:300/200;cursor:pointer;perspective:800px;transition:transform 1.2s ease;-webkit-tap-highlight-color:transparent;outline:none;z-index:3}
 .env:hover,.env:focus-visible{transform:translateY(-4px)}
 .env:focus-visible .back{box-shadow:0 0 0 2px var(--rose),0 16px 30px rgba(178,106,147,.3)}
 .env .back{position:absolute;inset:0;background:var(--env-dk);border-radius:4px;box-shadow:0 18px 30px rgba(178,106,147,.28)}
 .letter{position:absolute;left:5%;right:5%;top:6%;bottom:4%;background:var(--paper);border-radius:2px;z-index:1;display:flex;flex-direction:column;
-  align-items:center;padding-top:7%;gap:0;transition:transform .9s cubic-bezier(.3,.7,.3,1);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  align-items:center;padding-top:7%;gap:0;transition:transform 1.8s cubic-bezier(.3,.7,.3,1);box-shadow:0 1px 4px rgba(0,0,0,.08)}
 .letter .en{font-size:12px;color:#8a3d66;-webkit-text-stroke:.45px currentColor}
 .letter b{font-family:'Italiana',serif;font-weight:400;color:#9c4877;font-size:23px;letter-spacing:.04em;line-height:1.2;-webkit-text-stroke:.6px currentColor}
 .letter .cg{color:#5b3f48!important;font-weight:600;font-size:15px!important}
+.letter .ering{display:inline-block;width:.95em;height:1.03em;vertical-align:-.12em;margin:0 .08em}
 .pocket,.flap,.sprig{position:absolute;left:0;width:100%;display:block}
 .pocket{top:0;height:100%;z-index:2}
-.flap{top:0;height:62%;z-index:3;transform-origin:50% 0;transition:transform .75s ease-in-out,z-index 0s .38s}
+.flap{top:0;height:62%;z-index:3;transform-origin:50% 0;transition:transform 1.5s ease-in-out,z-index 0s .75s}
 .sprig{left:30%;width:40%;top:-30%;z-index:4;transition:opacity .35s,transform .35s}
 .seal{position:absolute;left:50%;top:60%;width:80px;height:80px;margin:-40px 0 0 -40px;z-index:5;
-  filter:drop-shadow(0 3px 3px rgba(90,30,45,.35)) drop-shadow(0 1px 1px rgba(90,30,45,.3));transition:transform .35s ease,opacity .35s ease}
+  filter:drop-shadow(0 3px 3px rgba(90,30,45,.35)) drop-shadow(0 1px 1px rgba(90,30,45,.3));transition:transform .8s ease,opacity .8s ease}
 .seal svg{display:block;width:100%;height:100%;overflow:visible}
 .tap{position:relative;z-index:3;margin-top:3.2vh;display:inline-flex;align-items:center;gap:8px;padding:9px 22px;border-radius:999px;
   border:1.5px solid var(--pink);background:var(--white);color:var(--pink);font-family:'Noto Serif Thai',serif;font-weight:500;font-size:16px;
@@ -112,8 +114,8 @@ body.opened .hero img{animation:kb 14s ease-out both}
 .hero .t .en{color:#fff}
 .hero .t{text-shadow:0 1px 3px rgba(40,22,28,.6),0 2px 14px rgba(40,22,28,.45)}
 .hero .t.top .en{font-size:15px;letter-spacing:.3em;-webkit-text-stroke:.7px #fff}
-.hero .monogram{display:block;width:132px;height:132px;margin:0 auto -8px;color:#fff;overflow:visible;
-  filter:drop-shadow(0 1px 2px rgba(40,22,28,.6)) drop-shadow(0 3px 12px rgba(40,22,28,.4))}
+.hero .t.bot .mono{font-size:66px;-webkit-text-stroke:1.4px #fff}
+.hero .t.bot .logo{width:min(62%,250px);height:auto;margin:0 auto;object-fit:contain;filter:drop-shadow(0 1px 2px rgba(40,22,28,.55)) drop-shadow(0 2px 10px rgba(40,22,28,.4))}
 .hero .t.bot .en{font-size:19px!important;letter-spacing:.2em;-webkit-text-stroke:.8px #fff}
 .namesec .en{color:#6b4c55;-webkit-text-stroke:.7px currentColor}
 .namesec .sub{color:#4f3a41;font-weight:500;font-size:15.5px}
@@ -145,7 +147,7 @@ h2{font-size:26px;margin-bottom:26px}
 
 /* families */
 .fam{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:4px;align-items:start;font-size:clamp(11.5px,3.3vw,14px);margin:8px -16px 26px;white-space:nowrap}
-.fam .and{font-family:'Italiana',serif;color:var(--rose);font-size:22px;padding-top:14px}
+.fam .and{font-family:'Italiana',serif;color:var(--rose);font-size:22px;line-height:1.2}
 .fam .side{font-size:11px;letter-spacing:.2em;color:var(--mauve);margin-bottom:6px}
 .fam p{line-height:1.55}.fam p+p{margin-top:6px}
 .famsec .en.small{color:#6b4c55;-webkit-text-stroke:.5px currentColor;font-size:13px;letter-spacing:.14em}
@@ -154,6 +156,7 @@ h2{font-size:26px;margin-bottom:26px}
 .famsec .sub{color:#6b4c55;font-weight:400}
 .famsec .nick{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);margin:12px -16px 0}
 .famsec .nick .n{display:block;line-height:1.1}
+.famsec .nick .rings{width:44px;height:44px;margin:0 6px;align-self:start;margin-top:4px}
 .famsec .nick .thn{display:block;font-size:14px;color:#a5537c;font-weight:500;margin-top:2px}
 .famsec .nick small{color:#46343a;font-weight:500;font-size:clamp(11.5px,3.3vw,14px);line-height:1.5;margin-top:6px;white-space:nowrap}
 .famsec .nick .n{color:#c27a96;-webkit-text-stroke:.5px currentColor}
@@ -168,7 +171,8 @@ h2{font-size:26px;margin-bottom:26px}
 .prog h2{color:#9a4f74}
 .prog .tl .dot{border-color:#d07fa3}
 .prog .tl .time{color:#a5537c}
-.prog .tl .what{color:#5d4a4f}
+.prog .tl .time .unit{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:500}
+.tl .what{color:#5d4a4f}
 .prog .tl .ic svg{stroke:#c06b93}
 .tl{position:relative;max-width:360px;margin:0 auto}
 .tl .curve{position:absolute;left:50%;top:0;width:76px;height:100%;transform:translateX(-50%)}
@@ -183,11 +187,12 @@ h2{font-size:26px;margin-bottom:26px}
 .tl .ic span{width:58px;height:58px;border-radius:50%;background:var(--paper);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(142,111,118,.12)}
 .tl .ic svg{width:36px;height:36px;stroke:var(--mauve);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .tl .time{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--mauve);font-weight:500;line-height:1.2}
+.tl .time .unit{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:500}
 .tl .what{font-size:13px;line-height:1.5}
 
 /* dress code */
-.sw{display:flex;justify-content:center;gap:16px;margin-top:6px}
-.sw i{display:block;width:54px;height:54px;border-radius:12px;margin:0 auto 8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)}
+.sw{display:flex;justify-content:center;gap:14px;margin-top:6px}
+.sw i{display:block;width:54px;height:54px;border-radius:50%;margin:0 auto 8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.04)}
 .sw>div{font-size:13px;color:var(--mauve);font-weight:500}
 .dress>*:not(.bf){position:relative;z-index:1}
 /* butterflies roam across the section, staying ~24px from the edges */
@@ -199,7 +204,7 @@ h2{font-size:26px;margin-bottom:26px}
 /* gallery */
 .gal{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 8px}
 .gi{display:block;aspect-ratio:3/4;overflow:hidden;cursor:zoom-in;border-radius:6px;box-shadow:0 6px 16px rgba(142,111,118,.14)}
-.gi:first-child{grid-column:1/-1;aspect-ratio:4/5}
+.gi.wide{grid-column:1/-1;aspect-ratio:3/2}
 .gi img{transition:transform .6s}.gi:hover img{transform:scale(1.05)}
 .gi:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
 #lb{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:56px 12px;background:rgba(40,28,32,0);transition:background .35s}
@@ -213,6 +218,13 @@ h2{font-size:26px;margin-bottom:26px}
 #lb button:focus-visible{outline:2px solid #fff}
 .lb-x{top:12px;right:12px}.lb-p{left:10px;top:50%;margin-top:-22px}.lb-n{right:10px;top:50%;margin-top:-22px}
 .lb-c{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#fff;font-family:'Italiana',serif;letter-spacing:.2em;font-size:13px}
+/* gallery motion kept slow and soft: a gentle rise-and-fade, no bounce */
+.gi[data-anim="pop"]{transition:opacity 1.6s ease var(--d,0s),transform 1.9s cubic-bezier(.22,.61,.36,1) var(--d,0s)}
+.pre.gi[data-anim="pop"]{opacity:0;transform:scale(.94) translateY(34px)}
+.gi img{transition:transform 1.4s cubic-bezier(.22,.61,.36,1)}
+#lb{transition:background .8s ease}
+#lb img{transform:scale(.9) translateY(16px);transition:transform 1s cubic-bezier(.22,.61,.36,1),opacity .9s ease}
+#lb img.swap{animation:swap .9s cubic-bezier(.22,.61,.36,1)}
 
 .map{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;max-width:100%;aspect-ratio:16/9;margin:18px 0 20px;border-radius:12px;text-decoration:none;color:var(--mauve);background:repeating-linear-gradient(0deg,transparent 0 23px,var(--line) 23px 24px),repeating-linear-gradient(90deg,transparent 0 23px,var(--line) 23px 24px),var(--paper);border:1px solid var(--line)}
 .map svg{width:34px;height:34px;fill:var(--rose)}.map span{font-size:13px;background:var(--paper);padding:2px 12px;border-radius:999px}
@@ -224,6 +236,29 @@ h2{font-size:26px;margin-bottom:26px}
 .mbtn.on svg{animation:spin 6s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .mbtn:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+/* rsvp form */
+.rsvp{max-width:340px;margin:22px auto 0;padding:22px 20px 24px;background:var(--paper);border:1px solid var(--line);border-radius:16px;
+  box-shadow:0 10px 26px rgba(199,123,164,.12);text-align:left;display:flex;flex-direction:column;gap:12px}
+.rsvp fieldset{border:0;padding:0;margin:0;min-width:0}
+.rsvp .rf{display:block;font-size:14px;font-weight:500;color:#5d4a4f;margin-bottom:6px}
+.rsvp input[type=text],.rsvp textarea{width:100%;font:inherit;font-size:16px;padding:10px 14px;border:1px solid var(--rose);border-radius:10px;background:var(--white);color:var(--ink)}
+.rsvp textarea{resize:vertical;min-height:84px;line-height:1.6}
+.rsvp input[type=text]:focus,.rsvp textarea:focus,.stepper input:focus{outline:2px solid var(--pink);outline-offset:1px}
+.choice{display:flex;flex-wrap:wrap;gap:8px}
+.choice label{flex:1 1 130px;cursor:pointer}
+.choice input{position:absolute;opacity:0;pointer-events:none}
+.choice span{display:block;text-align:center;padding:10px 4px;border:1px solid var(--rose);border-radius:999px;font-size:13px;white-space:nowrap;color:#6b4c55;background:var(--white);transition:.25s}
+.choice input:checked+span{background:var(--pink);border-color:var(--pink);color:#fff;font-weight:500}
+.choice input:focus-visible+span{outline:2px solid var(--pink);outline-offset:2px}
+.stepper{display:flex;align-items:center;gap:10px}
+.stepper button{width:40px;height:40px;border-radius:50%;border:1px solid var(--rose);background:var(--white);color:var(--pink);font-size:20px;line-height:1}
+.stepper input{width:70px;text-align:center;font:inherit;font-size:20px;padding:6px;border:1px solid var(--rose);border-radius:10px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.rmsg{min-height:1.4em;font-size:13px;color:#b0476d;text-align:center}
+.rsvp .btn{align-self:center;font-family:'Noto Serif Thai',serif;letter-spacing:.04em;font-weight:500;border:0}
+.rsvp .btn:disabled{opacity:.6;cursor:wait}
+.rsvp.done{text-align:center;align-items:center}
+.rsvp.done .thx{font-size:18px;font-weight:500;color:#a5537c}
+.rsvp.done .btn{border:1px solid var(--mauve)}
 nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:grid;grid-template-columns:repeat(4,1fr);
   background:rgba(255,253,251,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);z-index:40;padding-bottom:env(safe-area-inset-bottom,0px)}
 nav a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 0 10px;color:var(--mauve);text-decoration:none;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
@@ -320,7 +355,7 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
       <div class="back"></div>
       <div class="letter">
         <div class="en">You are invited</div>
-        <b>Borimas &amp; Songpon</b>
+        <b>Borimas <svg class="ering" viewBox="0 0 24 26" role="img" aria-label="และ"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="17" r="7.2" stroke-width="1.8"/><circle cx="12" cy="17" r="5.4" stroke-width=".6"/><path d="M8.6 6.2l1.6-2.6h3.6l1.6 2.6L12 10z" fill="#f6d3df" stroke-width="1"/><path d="M8.6 6.2h6.8M10.2 3.6L12 6.2l1.8-2.6M12 6.2V10" stroke-width=".6"/><path d="M4.5 4v2M3.5 5h2M19.5 3v1.6M18.7 3.8h1.6" stroke-width=".7"/></g></svg> Songpon</b>
         <div class="cg" style="font-size:14px;color:var(--mauve)">17 . 01 . 2027</div>
       </div>
       <svg class="pocket" viewBox="0 0 300 200" preserveAspectRatio="none" aria-hidden="true">
@@ -364,15 +399,10 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
 <div class="wrap">
 
   <section class="hero" id="home">
-    <img src="pics/S__177168430.jpg" alt="Borimas & Songpon" style="object-position:50% 40%">
+    <img src="pics/hero.jpg" alt="Borimas & Songpon" style="object-position:50% 45%">
     <div class="t top"><div class="en small">The wedding of</div></div>
     <div class="t bot">
-      <svg class="monogram" viewBox="0 0 120 120" role="img" aria-label="B S monogram">
-        <g fill="currentColor" stroke="currentColor" stroke-width=".7" font-family="'Pinyon Script',cursive" text-anchor="middle">
-          <text x="64" y="58" font-size="80">S</text><text x="56" y="94" font-size="66">B</text>
-        </g>
-        <path d="M24 96C44 110 86 100 100 74M100 74c3-4 6-3 5 1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
+      <img class="logo" src="pics/logo-white.png" alt="Borimas Songpon">
       <div class="en" style="margin-top:12px;font-size:15px">17 . 01 . 2027</div>
     </div>
   </section>
@@ -408,14 +438,22 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
   <section class="famsec" style="padding-bottom:140px">
     <div class="en small" style="margin-bottom:18px" data-anim="up">With the blessing of our families</div>
     <div class="fam">
-      <div data-anim="left" style="--d:.1s"><div class="side">ฝั่งเจ้าสาว</div><p>นางจงลักษณ์ เจริญธีรวิทย์</p></div>
-      <div class="and" data-anim="fade" style="--d:.2s">&amp;</div>
-      <div data-anim="right" style="--d:.1s"><div class="side">ฝั่งเจ้าบ่าว</div><p>นางนงลักษณ์ บังเมฆ</p></div>
+      <div data-anim="left" style="--d:.1s"><p>นางจงลักษณ์ เจริญธีรวิทย์</p></div>
+      <div class="and" data-anim="fade" style="--d:.2s;font-family:'Noto Serif Thai',serif;font-size:clamp(11.5px,3.3vw,14px);line-height:1.55;color:#a5537c;font-weight:500;padding:0 4px">และ</div>
+      <div data-anim="right" style="--d:.1s"><p>นางนงลักษณ์ บังเมฆ</p></div>
     </div>
-    <p class="sub" data-anim="up" style="--d:.2s">มีความยินดีขอเรียนเชิญท่านร่วมเป็นเกียรติ<br>ในงานมงคลสมรสของ</p>
+    <p class="sub" data-anim="up" style="--d:.2s">มีความยินดีขอเรียนเชิญท่านร่วมเป็นเกียรติ<br>ในงานมงคลสมรสระหว่าง</p>
     <div class="nick" data-anim="up" style="--d:.3s">
       <div><span class="n">Soft</span><span class="thn">ซอฟท์</span><small>นางสาวบริมาส เจริญธีรวิทย์</small></div>
-      <div class="en" style="color:var(--rose);font-size:22px;padding:0 12px">&amp;</div>
+      <svg class="rings" viewBox="0 0 48 48" role="img" aria-label="แหวนคู่">
+        <g fill="none" stroke="#c98aa0" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="31" r="10" stroke-width="2.2"/><circle cx="18" cy="31" r="7.6" stroke-width=".8"/>
+          <circle cx="30" cy="31" r="10" stroke-width="2.2"/><circle cx="30" cy="31" r="7.6" stroke-width=".8"/>
+          <path d="M12.5 17.5l2.8-4.5h5.4l2.8 4.5-5.5 6z" fill="#f6d3df" stroke-width="1.3"/>
+          <path d="M12.5 17.5h11M15.3 13l2.7 4.5 2.7-4.5M18 17.5v6" stroke-width=".8"/>
+          <path d="M8 12v3M6.5 13.5h3M27 10v2.4M25.8 11.2h2.4M31 16.5v2M30 17.5h2" stroke-width=".9"/>
+        </g>
+      </svg>
       <div><span class="n">Nueng</span><span class="thn">หนึ่ง</span><small>นายทรงพล นวลหงษ์</small></div>
     </div>
     <svg class="lineflora cbl" viewBox="0 0 140 120" aria-hidden="true"><use href="#lineflora"/></svg>
@@ -424,7 +462,7 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
     <div class="bf fly2" style="bottom:120px;right:22px;width:26px;--t:17s;--dl:-6s" data-c="#efa9c2"></div>
   </section>
 
-  <div class="photo-full" data-anim="fade"><img src="pics/S__177168429.jpg" alt="Soft & Nueng" style="object-position:50% 35%"></div>
+  <div class="photo-full" data-anim="fade"><img src="pics/photo2.jpg" alt="Soft & Nueng" style="object-position:50% 40%"></div>
 
   <!-- program -->
   <section class="prog" id="program">
@@ -437,7 +475,7 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
       </svg>
       <!-- 1 ตักบาตร -->
       <div class="row" data-anim="left">
-        <div class="txt"><div class="time">07:09</div><div class="what">ตักบาตรพระสงฆ์</div></div>
+        <div class="txt"><div class="time">07:09 <span class="unit">น.</span></div><div class="what">ตักบาตรพระสงฆ์</div></div>
         <div class="dot"></div>
         <div class="ic"><span><svg viewBox="0 0 48 48"><path d="M11 24h26M12 24c0 8 5 13 12 13s12-5 12-13M24 37v3M17 41h14M14 24c1-6 5-9 10-9s9 3 10 9M24 15v-3M21.5 12h5"/></svg></span></div>
       </div>
@@ -445,11 +483,11 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
       <div class="row" data-anim="right">
         <div class="ic l"><span><svg viewBox="0 0 48 48"><path d="M10 30h28M13 30c0 5 5 8 11 8s11-3 11-8M24 38v3M18 42h12M16 30c0-8 4-14 8-19 4 5 8 11 8 19M24 11V7M20.5 19c2 1.2 5 1.2 7 0M18.5 24.5c3 1.5 8 1.5 11 0"/></svg></span></div>
         <div class="dot"></div>
-        <div class="txt r"><div class="time">08:09</div><div class="what">แห่ขันหมาก</div></div>
+        <div class="txt r"><div class="time">08:09 <span class="unit">น.</span></div><div class="what">แห่ขันหมาก</div></div>
       </div>
       <!-- 3 ผูกข้อมือ -->
       <div class="row" data-anim="left">
-        <div class="txt"><div class="time">09:09</div><div class="what">พิธีผูกข้อมือ</div></div>
+        <div class="txt"><div class="time">09:09 <span class="unit">น.</span></div><div class="what">พิธีผูกข้อมือ</div></div>
         <div class="dot"></div>
         <div class="ic"><span><svg viewBox="0 0 48 48"><path d="M8 27c8-4 24-4 32 0M8 31c8-4 24-4 32 0"/><path d="M24 28c-4-7-11-8-11-3s7 6 11 3zM24 28c4-7 11-8 11-3s-7 6-11 3z"/><path d="M23 29l-3 10M25 29l3 10"/></svg></span></div>
       </div>
@@ -457,7 +495,7 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
       <div class="row" data-anim="right">
         <div class="ic l"><span><svg viewBox="0 0 48 48"><ellipse cx="22" cy="30" rx="15" ry="7"/><ellipse cx="22" cy="29" rx="7" ry="3"/><path d="M22 37v4M14 41h16M30 8l8 20M35 7l6 20"/></svg></span></div>
         <div class="dot"></div>
-        <div class="txt r"><div class="time">12:00</div><div class="what">เชิญร่วมรับประทาน<br>อาหาร (โต๊ะจีน)</div></div>
+        <div class="txt r"><div class="time">12:00 <span class="unit">น.</span></div><div class="what">เชิญร่วมรับประทาน<br>อาหาร (โต๊ะจีน)</div></div>
       </div>
     </div>
   </section>
@@ -466,9 +504,10 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
   <section class="dress" style="padding:84px 28px 84px">
     <h2 class="en" data-anim="up">Dress Code</h2>
     <div class="sw">
-      <div data-anim="pop" style="--d:.05s"><span class="bf orbit" style="--dl:0s" data-c="#e9a3b6"></span><i style="background:#efc9cf"></i>ชมพู</div>
-      <div data-anim="pop" style="--d:.18s"><span class="bf orbit" style="--dl:-9s" data-c="#f1e4cc" data-s="#c9b28a"></span><i style="background:#f1e6d3"></i>ครีม</div>
-      <div data-anim="pop" style="--d:.31s"><span class="bf orbit" style="--dl:-4.5s" data-c="#d2aa5c"></span><i style="background:linear-gradient(135deg,#cfae72,#ead6a8,#c9a45c)"></i>ทอง</div>
+      <div data-anim="pop" style="--d:.05s"><span class="bf orbit" style="--dl:0s" data-c="#f7b6c9"></span><i style="background:#ffdee9"></i></div>
+      <div data-anim="pop" style="--d:.15s"><i style="background:#fdc7d5"></i></div>
+      <div data-anim="pop" style="--d:.25s"><span class="bf orbit" style="--dl:-9s" data-c="#f295aa"></span><i style="background:#fbd7d9"></i></div>
+      <div data-anim="pop" style="--d:.35s"><i style="background:#f295aa"></i></div>
     </div>
   </section>
 
@@ -478,11 +517,15 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
   <section id="gallery" style="padding:40px 0 60px">
     <h2 class="en" data-anim="up">Gallery</h2>
     <div class="gal">
-      <a class="gi" href="pics/S__177168428.jpg" data-anim="pop"><img src="pics/S__177168428.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 30%"></a>
-      <a class="gi" href="pics/S__177168426.jpg" data-anim="pop" style="--d:.08s"><img src="pics/S__177168426.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 25%"></a>
-      <a class="gi" href="pics/S__177168427.jpg" data-anim="pop" style="--d:.18s"><img src="pics/S__177168427.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 35%"></a>
-      <a class="gi" href="pics/S__177168429.jpg" data-anim="pop" style="--d:.08s"><img src="pics/S__177168429.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 30%"></a>
-      <a class="gi" href="pics/S__177168430.jpg" data-anim="pop" style="--d:.18s"><img src="pics/S__177168430.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 30%"></a>
+      <a class="gi wide" href="pics_new/S__41345032_0.jpg" data-anim="pop"><img src="pics_new/S__41345032_0.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 100%"></a>
+      <a class="gi" href="pics_new/S__41345033_0.jpg" data-anim="pop" style="--d:.08s"><img src="pics_new/S__41345033_0.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 100%"></a>
+      <a class="gi" href="pics_new/S__41345034_0.jpg" data-anim="pop" style="--d:.18s"><img src="pics_new/S__41345034_0.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 100%"></a>
+      <a class="gi" href="pics_new/S__41345036_0.jpg" data-anim="pop" style="--d:.08s"><img src="pics_new/S__41345036_0.jpg" alt="ซอฟท์และหนึ่งในชุดไทย" style="object-position:50% 100%"></a>
+      <a class="gi" href="pics_new/S__41345037_0.jpg" data-anim="pop" style="--d:.18s"><img src="pics_new/S__41345037_0.jpg" alt="ซอฟท์และหนึ่งในชุดไทย" style="object-position:50% 100%"></a>
+      <a class="gi" href="pics_new/S__41345038_0.jpg" data-anim="pop" style="--d:.08s"><img src="pics_new/S__41345038_0.jpg" alt="ซอฟท์และหนึ่งในชุดไทย" style="object-position:50% 100%"></a>
+      <a class="gi" href="pics_new/S__41345039_0.jpg" data-anim="pop" style="--d:.18s"><img src="pics_new/S__41345039_0.jpg" alt="ซอฟท์และหนึ่งในชุดไทย" style="object-position:50% 100%"></a>
+      <a class="gi" href="pics_new/S__41345051.jpg" data-anim="pop" style="grid-column:1/-1;aspect-ratio:4/5"><img src="pics_new/S__41345051.jpg" alt="ซอฟท์และหนึ่ง" style="object-position:50% 100%"></a>
+    
     </div>
   </section>
 
@@ -498,11 +541,47 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
     <div class="wind" data-n="9" aria-hidden="true"></div>
     <h2 class="en" style="margin-bottom:10px" data-anim="up">Location</h2>
     <div data-anim="up" style="--d:.1s">
-      <p style="font-size:20px;color:#4f3a41;font-weight:500">โรงแรมกาดน้ำทอง</p>
+      <p style="font-size:20px;color:#4f3a41;font-weight:500">โรงแรมน้ำทองน่าน</p>
       <p class="sub" style="color:#5d4a4f;font-weight:500;font-size:15px">จังหวัดน่าน</p>
     </div>
     <a class="map" id="map" target="_blank" rel="noopener" href="#" data-anim="pop" style="--d:.15s"><svg viewBox="0 0 24 24"><path d="M12 22s-7-6.6-7-12a7 7 0 0 1 14 0c0 5.4-7 12-7 12zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg><span>เปิดแผนที่ Google Maps</span></a>
     <a class="btn" id="dir" target="_blank" rel="noopener" href="#" data-anim="up" style="--d:.25s;font-family:'Noto Serif Thai',serif;letter-spacing:.04em;font-weight:500;color:#6b4c55;border-color:#6b4c55">กดเพื่อนำทาง</a>
+  </section>
+
+  <!-- rsvp: shown only in the GitHub build (RSVP_ENABLED), answers go to Google Sheets -->
+  <section id="rsvp" hidden>
+    <h2 class="en" style="margin-bottom:6px" data-anim="up">RSVP</h2>
+    <p class="sub" data-anim="up" style="--d:.1s">ตอบรับการเข้าร่วมงานและส่งคำอวยพร<br><span style="font-size:13px">รบกวนตอบกลับภายในวันที่ 31 ธันวาคม 2569</span></p>
+    <form class="rsvp" id="rsvpForm" novalidate data-anim="up" style="--d:.2s">
+      <label class="rf" for="rsvpName">ชื่อ-นามสกุล (หรือชื่อเล่น)</label>
+      <input id="rsvpName" name="name" type="text" autocomplete="name" maxlength="100" placeholder="เช่น สมใจ ใจดี" required>
+      <fieldset>
+        <legend class="rf">จะมาร่วมงานไหม</legend>
+        <div class="choice">
+          <label><input type="radio" name="attend" id="rsvpYes" value="yes"><span>มาร่วมงาน</span></label>
+          <label><input type="radio" name="attend" id="rsvpNo" value="no"><span>ไม่สะดวกมาร่วมงาน</span></label>
+        </div>
+      </fieldset>
+      <div id="rsvpCountBox" hidden>
+        <label class="rf" for="rsvpCount">มาร่วมงานทั้งหมดกี่ท่าน (รวมตัวเองด้วย)</label>
+        <div class="stepper">
+          <button type="button" id="rsvpMinus" aria-label="ลดจำนวน">−</button>
+          <input id="rsvpCount" name="count" type="number" inputmode="numeric" min="1" max="20" value="1">
+          <button type="button" id="rsvpPlus" aria-label="เพิ่มจำนวน">+</button>
+        </div>
+      </div>
+      <div>
+        <label class="rf" for="rsvpWish">คำอวยพรถึงบ่าวสาว <span style="font-weight:300;color:var(--mauve)">(ไม่บังคับ)</span></label>
+        <textarea id="rsvpWish" name="wish" rows="3" maxlength="500" placeholder="ขอให้มีความสุขมาก ๆ นะ…"></textarea>
+      </div>
+      <p class="rmsg" id="rsvpMsg" aria-live="polite"></p>
+      <button class="btn fill" id="rsvpSend" type="submit">ส่งคำตอบและคำอวยพร</button>
+    </form>
+    <div class="rsvp done" id="rsvpDone" hidden>
+      <p class="thx">ขอบคุณที่ตอบกลับนะคะ</p>
+      <p class="sub" id="rsvpSummary"></p>
+      <button class="btn" id="rsvpAgain" type="button">แก้ไขคำตอบ</button>
+    </div>
   </section>
 
   <!-- wishes -->
@@ -511,13 +590,11 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
     <div class="bf fly" style="bottom:92px;left:24px;width:30px;--t:16s" data-c="#cbbfe0"></div>
     <div class="bf fly2" style="bottom:80px;right:26px;width:26px;--t:18s;--dl:-6s" data-c="#efa9c2"></div>
     <div class="bf" style="bottom:104px;left:58%;width:24px;animation-delay:-3s" data-c="#a9c1ea"></div>
-    <h2 class="en" style="margin-bottom:14px" data-anim="up">Send your wishes</h2>
-    <p class="sub" style="margin-bottom:24px;--d:.1s" data-anim="up">ร่วมส่งคำอวยพรถึงบ่าวสาว<br>ทุกถ้อยคำของท่านมีความหมายกับเราเสมอ</p>
-    <a class="btn fill" id="wish" href="#" target="_blank" rel="noopener" data-anim="pop">เขียนคำอวยพร</a>
-    <p class="sub" id="wishNote" hidden style="margin-top:10px;font-size:12px">ช่องอวยพรจะเปิดเร็ว ๆ นี้</p>
+    <h2 class="en" style="margin-bottom:14px" data-anim="up">See you soon</h2>
+    <p class="sub" style="margin-bottom:24px;--d:.1s" data-anim="up">แล้วพบกันนะคะ<br>เรารอที่จะได้เจอคุณในวันพิเศษของเรา</p>
     <div class="vline"></div>
     <div class="en" style="font-size:13px" data-anim="fade">Hope to see you at our wedding</div>
-    <div class="mono" style="font-size:42px;color:var(--rose);margin-top:14px" data-anim="up">B<span style="font-size:.5em;vertical-align:middle;margin:0 4px">&amp;</span>S</div>
+    <img src="pics/logo-pink.png" alt="Borimas Songpon" data-anim="up" style="width:min(52%,200px);height:auto;margin:14px auto 0;object-fit:contain">
     <svg id="emeadow" viewBox="0 0 400 170" style="width:100%;display:block;margin-top:10px" aria-hidden="true"></svg>
   </section>
 
@@ -544,7 +621,7 @@ footer{padding:20px 20px 30px;text-align:center;font-size:12px;color:var(--mauve
 <script>
 // ---- ตั้งค่างาน ----
 const EVENT = new Date('2027-01-17T07:09:00+07:00');
-const VENUE = 'โรงแรมกาดน้ำทอง น่าน';
+const VENUE = 'โรงแรมน้ำทองน่าน';
 const GOOGLE_FORM = '';   // ใส่ลิงก์ Google Form ที่นี่
 
 // links
@@ -664,56 +741,19 @@ document.querySelectorAll('.bf').forEach(b=>{
 
 // envelope: seal and flowers lift → flap opens → letter rises → cover fades
 document.body.style.overflow = 'hidden';
-/* ---------- music: an original music-box waltz made with Web Audio ---------- */
+/* ---------- music: the couple's piano track, looping softly ---------- */
 const music = (()=>{
-  let ctx, master, timer, nextBar = 0, bar = 0, playing = false;
-  const BEAT = .78, f = m => 440*Math.pow(2,(m-69)/12);
-  // C  Am  F  G  C  Em  F  G   (root, chord tones, melody as [beat, midi])
-  const BARS = [
-    [48,[60,64,67],[[0,76],[1,79],[2,76]]], [45,[57,60,64],[[0,81],[1.5,79],[2,76]]],
-    [41,[57,60,65],[[0,77],[1,81],[2,84]]], [43,[55,59,62],[[0,83],[1,81],[2,79]]],
-    [48,[60,64,67],[[0,76],[1,79],[2,84]]], [40,[55,59,64],[[0,83],[1,79],[2,76]]],
-    [41,[57,60,65],[[0,81],[1,77],[2,74]]], [43,[55,59,62],[[0,74],[1,71],[2,72]]],
-  ];
-  function tine(midi, t, vol, len){
-    const o = ctx.createOscillator(), o2 = ctx.createOscillator(), g = ctx.createGain();
-    o.type='sine'; o2.type='triangle'; o.frequency.value=f(midi); o2.frequency.value=f(midi)*2;
-    const g2 = ctx.createGain(); g2.gain.value=.18;
-    o.connect(g); o2.connect(g2).connect(g); g.connect(master);
-    g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(vol,t+.006); g.gain.exponentialRampToValueAtTime(.0001,t+len);
-    o.start(t); o2.start(t); o.stop(t+len+.05); o2.stop(t+len+.05);
+  const au = new Audio('song.mp3');
+  au.loop = true; au.preload = 'auto'; au.volume = .75;
+  let playing = false;
+  function ui(on){
+    playing = on; mbtn.hidden = false; mbtn.classList.toggle('on', on);
+    mbtn.setAttribute('aria-pressed', on?'true':'false'); mbtn.setAttribute('aria-label', on?'ปิดเพลง':'เปิดเพลง');
   }
-  function schedule(){
-    while (nextBar < ctx.currentTime + 1.5){
-      const [root, chord, mel] = BARS[bar % BARS.length], t = nextBar;
-      tine(root, t, .16, 2.4);
-      chord.forEach((m,i)=>{ tine(m, t+BEAT*(1+ (i>1?1:0)) + (i===1?BEAT*.5:0), .06, 1.4); });
-      mel.forEach(([b,m])=>tine(m, t+b*BEAT, .13, 1.8));
-      nextBar += BEAT*3; bar++;
-    }
-  }
-  function reverb(){
-    const len = ctx.sampleRate*2.6, buf = ctx.createBuffer(2,len,ctx.sampleRate);
-    for(let c=0;c<2;c++){ const d=buf.getChannelData(c); for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,2.5); }
-    const cv = ctx.createConvolver(); cv.buffer = buf; return cv;
-  }
-  function start(){
-    try{
-      if(!ctx){ ctx = new (window.AudioContext||window.webkitAudioContext)();
-        master = ctx.createGain(); master.gain.value = 0;
-        const wet = ctx.createGain(); wet.gain.value=.35; const rv = reverb();
-        master.connect(ctx.destination); master.connect(rv); rv.connect(wet); wet.connect(ctx.destination); }
-      ctx.resume(); nextBar = ctx.currentTime + .1; playing = true;
-      master.gain.cancelScheduledValues(ctx.currentTime); master.gain.setTargetAtTime(.55, ctx.currentTime, .6);
-      clearInterval(timer); schedule(); timer = setInterval(schedule, 250);
-      mbtn.hidden = false; mbtn.classList.add('on'); mbtn.setAttribute('aria-pressed','true'); mbtn.setAttribute('aria-label','ปิดเพลง');
-    }catch(e){ mbtn.hidden = true; }
-  }
-  function stop(){
-    playing = false; clearInterval(timer);
-    master.gain.setTargetAtTime(0, ctx.currentTime, .25);
-    mbtn.classList.remove('on'); mbtn.setAttribute('aria-pressed','false'); mbtn.setAttribute('aria-label','เปิดเพลง');
-  }
+  au.addEventListener('play', ()=>ui(true));
+  au.addEventListener('pause', ()=>ui(false));
+  function start(){ const p = au.play(); ui(true); if (p && p.catch) p.catch(()=>ui(false)); }
+  function stop(){ au.pause(); }
   mbtn.addEventListener('click', ()=> playing ? stop() : start());
   return {start};
 })();
@@ -723,15 +763,15 @@ function openEnv(){
   if (cover.dataset.state === 'ready'){
     cover.dataset.state = 'done';
     cover.classList.add('open'); document.body.style.overflow=''; document.body.classList.add('opened');
-    music.start();
     return;
   }
   if (cover.dataset.state) return;
   cover.dataset.state = 'opening';
+  music.start();   // the song begins the moment the envelope is tapped
   cover.classList.add('s1');
-  setTimeout(()=>cover.classList.add('s2'), 300);
-  setTimeout(()=>cover.classList.add('s3'), 1000);
-  setTimeout(()=>{ tapTxt.textContent = 'แตะอีกครั้งเพื่อเปิดการ์ด'; cover.classList.add('ready'); cover.dataset.state = 'ready'; }, 1900);
+  setTimeout(()=>cover.classList.add('s2'), 750);
+  setTimeout(()=>cover.classList.add('s3'), 2200);
+  setTimeout(()=>{ tapTxt.textContent = 'แตะอีกครั้งเพื่อเปิดการ์ด'; cover.classList.add('ready'); cover.dataset.state = 'ready'; }, 4000);
 }
 env.addEventListener('click', openEnv);
 tap.addEventListener('click', openEnv);
@@ -750,9 +790,105 @@ function tick(){
 }
 tick(); setInterval(tick,1000);
 
-// wishes
-wish.onclick = e=>{ if(!GOOGLE_FORM){ e.preventDefault(); wishNote.hidden = false; } };
-if (GOOGLE_FORM) wish.href = GOOGLE_FORM;
+/* ---------- RSVP → Google Sheets (GitHub build only) ---------- */
+const RSVP_ENABLED = false;   // build-github.ps1 turns this on
+const RSVP_URL = '';          // Apps Script web app URL, filled in by build-github.ps1
+(()=>{
+  if (!RSVP_ENABLED) return;
+  rsvp.hidden = false;
+  const KEY = 'bs-rsvp';
+  const box = rsvpCountBox, msg = rsvpMsg;
+  const clamp = v => Math.min(20, Math.max(1, parseInt(v,10) || 1));
+  document.querySelectorAll('input[name=attend]').forEach(r=>r.addEventListener('change', ()=>{ box.hidden = !rsvpYes.checked; msg.textContent=''; }));
+  rsvpMinus.onclick = ()=>{ rsvpCount.value = clamp(+rsvpCount.value - 1); };
+  rsvpPlus.onclick  = ()=>{ rsvpCount.value = clamp(+rsvpCount.value + 1); };
+  rsvpCount.addEventListener('change', ()=>{ rsvpCount.value = clamp(rsvpCount.value); });
+  function showDone(d){
+    rsvpForm.hidden = true; rsvpDone.hidden = false;
+    rsvpSummary.textContent = d.attend === 'yes'
+      ? `${d.name} · มาร่วมงาน ${d.count} ท่าน\nแล้วพบกันวันที่ 17 มกราคม 2570`
+      : `${d.name} · ไม่สะดวกมาร่วมงาน\nขอบคุณที่แจ้งให้เราทราบนะคะ`;
+    rsvpSummary.style.whiteSpace = 'pre-line';
+  }
+  try { const saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved) showDone(saved); } catch(e){}
+  rsvpAgain.onclick = ()=>{ rsvpDone.hidden = true; rsvpForm.hidden = false; rsvpName.focus(); };
+  rsvpForm.addEventListener('submit', async e=>{
+    e.preventDefault();
+    const name = rsvpName.value.trim();
+    const attend = rsvpYes.checked ? 'yes' : rsvpNo.checked ? 'no' : '';
+    if (!name){ msg.textContent = 'กรุณาใส่ชื่อ'; rsvpName.focus(); return; }
+    if (!attend){ msg.textContent = 'กรุณาเลือกว่าจะมาร่วมงานหรือไม่'; return; }
+    const d = { name, attend, count: attend === 'yes' ? clamp(rsvpCount.value) : 0, wish: rsvpWish.value.trim().slice(0,500) };
+    if (!RSVP_URL){ msg.textContent = 'ยังไม่ได้เชื่อมต่อ Google Sheet'; return; }
+    rsvpSend.disabled = true; rsvpSend.textContent = 'กำลังส่ง…'; msg.textContent = '';
+    try {
+      // text/plain keeps this a simple request, so Apps Script accepts it without a CORS preflight
+      const ctl = new AbortController(), timer = setTimeout(()=>ctl.abort(), 15000);
+      await fetch(RSVP_URL, { method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(d), signal: ctl.signal });
+      clearTimeout(timer);
+      try { localStorage.setItem(KEY, JSON.stringify(d)); } catch(e){}
+      showDone(d);
+      celebrate();
+    } catch(err){
+      msg.textContent = 'ส่งไม่สำเร็จ กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองอีกครั้ง';
+    } finally {
+      rsvpSend.disabled = false; rsvpSend.textContent = 'ส่งคำตอบและคำอวยพร';
+    }
+  });
+})();
+
+// celebration played after a guest sends their RSVP and wishes: hearts, then balloons with a banner
+function celebrate(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // a slow shower of hearts drifting up across the whole screen
+  const W = innerWidth, H = innerHeight, cols = ['#e27aa0','#f3a6c1','#c77ba4','#f295aa','#fdc7d5'];
+  for (let i=0;i<34;i++){
+    const h = document.createElement('span'); h.textContent = '♥';
+    const size = 16+Math.random()*30, x = Math.random()*W, sway = (Math.random()-.5)*120;
+    h.style.cssText = `position:fixed;left:${x}px;top:${H}px;color:${cols[i%cols.length]};font-size:${size}px;line-height:1;pointer-events:none;z-index:70;opacity:0`;
+    document.body.appendChild(h);
+    h.animate([
+      {transform:'translate(-50%,0) scale(.5) rotate(0deg)',opacity:0},
+      {transform:`translate(calc(-50% + ${sway*.3}px),${-H*.25}px) scale(1) rotate(${sway*.1}deg)`,opacity:.95,offset:.15},
+      {transform:`translate(calc(-50% + ${sway}px),${-H*.8}px) scale(1.05) rotate(${-sway*.1}deg)`,opacity:.85,offset:.75},
+      {transform:`translate(calc(-50% + ${sway*.6}px),${-H-60}px) scale(1.1) rotate(0deg)`,opacity:0}
+    ],{duration:4200+Math.random()*2400,delay:Math.random()*1400,easing:'ease-out',fill:'both'}).onfinish = ()=>h.remove();
+  }
+  // once the hearts have drifted away, a bunch of balloons carries a banner up the screen
+  if (!balloonUp){ balloonUp = true; setTimeout(launchBalloons, 300); }
+}
+let balloonUp = false;
+function launchBalloons(){
+  const b = document.createElement('div');
+  b.setAttribute('aria-hidden','true');
+  const w = Math.min(260, innerWidth*.7);
+  b.style.cssText = `position:fixed;left:50%;top:100%;width:${w}px;margin-left:${-w/2}px;pointer-events:none;z-index:71`;
+  const bl = (cx,cy,c1,c2,id)=>`<defs><radialGradient id="${id}" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset=".25" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></radialGradient></defs>
+    <path d="M${cx} ${cy+46}C${cx+6} ${cy+80} ${cx-10} ${cy+110} 130 214" fill="none" stroke="#c9a3b1" stroke-width="1.2"/>
+    <ellipse cx="${cx}" cy="${cy}" rx="36" ry="44" fill="url(#${id})"/>
+    <path d="M${cx-5} ${cy+43}l5 6 5-6z" fill="${c2}"/>`;
+  b.innerHTML = `<svg viewBox="0 0 260 300" style="display:block;width:100%;height:auto;overflow:visible;will-change:transform">
+    ${bl(70,70,'#f7c3d3','#e27aa0','bg1')}${bl(190,74,'#fde4ee','#f295aa','bg2')}${bl(130,46,'#f3d6e8','#c77ba4','bg3')}
+    <g transform="translate(130 238)">
+      <path d="M-118 -24H118L106 0L118 24H-118L-106 0Z" fill="#ffffff" stroke="#d9a7bb" stroke-width="1.4"/>
+      <path d="M-110 -18H110M-110 18H110" stroke="#f1dbe2" stroke-width="1"/>
+      <text y="0" text-anchor="middle" font-family="Italiana,serif" font-size="21" letter-spacing="2.5" fill="#8a3d66" stroke="#8a3d66" stroke-width="1.1" stroke-linejoin="round">HAPPY WEDDING</text>
+      <text y="16" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-weight="500" font-size="15" fill="#5b3f48" stroke="#5b3f48" stroke-width=".55" stroke-linejoin="round">Soft &amp; Nueng</text>
+    </g></svg>`;
+  document.body.appendChild(b);
+  b.style.willChange = 'transform';
+  const H = innerHeight, rise = H + b.offsetHeight + 40;
+  // one steady climb for the whole bunch, plus a separate gentle sway on the drawing, so the motion never jerks
+  b.animate([
+    {transform:'translate3d(0,0,0)',opacity:0},
+    {transform:`translate3d(0,${-rise*.08}px,0)`,opacity:1,offset:.08},
+    {transform:`translate3d(0,${-rise}px,0)`,opacity:1}
+  ],{duration:10000,easing:'linear',fill:'forwards'}).onfinish = ()=>{ b.remove(); balloonUp = false; };
+  b.firstElementChild.animate([
+    {transform:'translateX(-14px) rotate(-2.5deg)'},
+    {transform:'translateX(14px) rotate(2.5deg)'}
+  ],{duration:2600,easing:'ease-in-out',direction:'alternate',iterations:Infinity});
+}
 
 // gallery pop-up viewer
 const shots = [...document.querySelectorAll('.gi')];
@@ -764,7 +900,7 @@ function show(i, swap){
   if (swap){ lbImg.classList.remove('swap'); void lbImg.offsetWidth; lbImg.classList.add('swap'); }
 }
 function openLb(i){ show(i); lb.hidden=false; requestAnimationFrame(()=>requestAnimationFrame(()=>lb.classList.add('on'))); lb.querySelector('.lb-x').focus(); }
-function closeLb(){ lb.classList.remove('on'); setTimeout(()=>{ lb.hidden=true; shots[cur].focus(); }, 350); }
+function closeLb(){ lb.classList.remove('on'); setTimeout(()=>{ lb.hidden=true; shots[cur].focus(); }, 800); }
 shots.forEach((a,i)=>a.addEventListener('click',e=>{ e.preventDefault(); openLb(i); }));
 lb.querySelector('.lb-x').onclick = closeLb;
 lb.querySelector('.lb-p').onclick = e=>{ e.stopPropagation(); show(cur-1,true); };
@@ -784,3 +920,5 @@ if (motionOK){
   });
 } else { tl.classList.add('drawn'); }
 </script>
+
+</body></html>
